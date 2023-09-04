@@ -88,6 +88,14 @@
 //   }
 // }
 
+
+
+
+
+
+
+
+
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
@@ -132,7 +140,7 @@ function initialize() {
 function startCountdown() {
   clearInterval(countdownInterval);
   
-ifClickStart = true;  
+ifClickStart = true;
   if (ifClickStart) {
     elements.btnStart.removeEventListener("submit", startCountdown)
     elements.btnStart.classList.add('js-pointer');
@@ -177,3 +185,5 @@ function updateTimer(days, hours, minutes, seconds) {
 function addLeadingZero(value) {
   return String(value).padStart(2, '0');
 }
+
+

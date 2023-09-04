@@ -48,7 +48,7 @@ formRef.addEventListener("submit", showPromise)
 function showPromise(e) {
   e.preventDefault()
 
-  for (let i = 0; i < valueForm.amount; i++) {
+  for (let i = 1; i < valueForm.amount; i++) {
      const currentDelay =  valueForm.delay + i * valueForm.step;
      createPromise(i, currentDelay)
   .then(({ position, delay }) => {
